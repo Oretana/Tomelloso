@@ -1,15 +1,10 @@
 {
   "theme": {
-    "name": "BillboardTheme",
+    "name": "LaunchpadTheme",
     "styles": [
+      "style2",
       "default",
-      "turquoise",
-      "green",
-      "pink",
-      "purple",
-      "red",
-      "orange",
-      "blue"
+      "style3"
     ],
     "version": "2.11",
     "sharedTheme": {
@@ -24,7 +19,7 @@
   "title": "Tomelloso3D",
   "subtitle": "",
   "keepAppState": false,
-  "logo": "images/app-logo.png",
+  "logo": "images/logo.png",
   "httpProxy": {
     "useProxy": true,
     "alwaysUseProxy": false,
@@ -36,113 +31,142 @@
   "widgetOnScreen": {
     "widgets": [
       {
-        "uri": "widgets/ZoomSlider/Widget",
+        "uri": "themes/LaunchpadTheme/widgets/AnchorBarController/Widget",
         "position": {
-          "left": 10,
+          "bottom": 24,
+          "height": 40,
+          "relativeTo": "map",
+          "zIndex": 0
+        },
+        "version": "2.11",
+        "id": "themes_LaunchpadTheme_widgets_AnchorBarController_Widget_13",
+        "url": "/webappbuilder/apps/11/themes/LaunchpadTheme/widgets/AnchorBarController/",
+        "icon": "themes/LaunchpadTheme/widgets/AnchorBarController/images/icon.png",
+        "name": "AnchorBarController"
+      },
+      {
+        "uri": "themes/LaunchpadTheme/widgets/Header/Widget",
+        "position": {
+          "left": 9,
           "top": 10,
+          "width": 670,
+          "height": 46,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_ZoomSlider_Widget_13",
-        "url": "/webappbuilder/apps/7/widgets/ZoomSlider/",
+        "id": "themes_LaunchpadTheme_widgets_Header_Widget_14",
+        "url": "/webappbuilder/apps/11/themes/LaunchpadTheme/widgets/Header/",
+        "icon": "themes/LaunchpadTheme/widgets/Header/images/icon.png",
+        "hasSearchOverlayed": true,
+        "name": "Header"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 344,
+          "top": 16,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_Search_Widget_15",
+        "url": "/webappbuilder/apps/11/widgets/Search/",
+        "icon": "widgets/Search/images/icon.png",
+        "name": "Search",
+        "visible": false
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "left": 17,
+          "top": 78,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_ZoomSlider_Widget_16",
+        "url": "/webappbuilder/apps/11/widgets/ZoomSlider/",
         "icon": "widgets/ZoomSlider/images/icon.png",
         "name": "ZoomSlider"
       },
       {
         "uri": "widgets/Home/Widget",
         "position": {
-          "left": 10,
-          "top": 85,
+          "left": 17,
+          "top": 153,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_Home_Widget_14",
-        "url": "/webappbuilder/apps/7/widgets/Home/",
+        "id": "widgets_Home_Widget_17",
+        "url": "/webappbuilder/apps/11/widgets/Home/",
         "icon": "widgets/Home/images/icon.png",
         "name": "Home"
       },
       {
         "uri": "widgets/MyLocation/Widget",
         "position": {
-          "left": 10,
-          "top": 123,
+          "left": 17,
+          "top": 191,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_MyLocation_Widget_15",
-        "url": "/webappbuilder/apps/7/widgets/MyLocation/",
+        "id": "widgets_MyLocation_Widget_18",
+        "url": "/webappbuilder/apps/11/widgets/MyLocation/",
         "icon": "widgets/MyLocation/images/icon.png",
         "name": "MyLocation",
-        "config": "configs/MyLocation/config_widgets_MyLocation_Widget_15.json",
         "visible": false
       },
       {
         "uri": "widgets/Navigate/Widget",
         "position": {
-          "left": 10,
-          "top": 161,
+          "left": 17,
+          "top": 229,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_Navigate_Widget_16",
-        "url": "/webappbuilder/apps/7/widgets/Navigate/",
+        "id": "widgets_Navigate_Widget_19",
+        "url": "/webappbuilder/apps/11/widgets/Navigate/",
         "icon": "widgets/Navigate/images/icon.png",
         "name": "Navigate"
       },
       {
-        "uri": "widgets/Search/Widget",
+        "uri": "widgets/Coordinate/Widget",
         "position": {
-          "right": 10,
-          "top": 10,
+          "left": 10,
+          "bottom": 24,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_Search_Widget_17",
-        "url": "/webappbuilder/apps/7/widgets/Search/",
-        "icon": "widgets/Search/images/icon.png",
-        "name": "Search",
+        "id": "widgets_Coordinate_Widget_20",
+        "url": "/webappbuilder/apps/11/widgets/Coordinate/",
+        "icon": "widgets/Coordinate/images/icon.png",
+        "name": "Coordinate",
         "visible": false
       },
       {
         "uri": "widgets/Compass/Widget",
         "position": {
-          "right": 10,
-          "top": 58,
+          "right": 20,
+          "top": 69,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_Compass_Widget_18",
-        "url": "/webappbuilder/apps/7/widgets/Compass/",
+        "id": "widgets_Compass_Widget_21",
+        "url": "/webappbuilder/apps/11/widgets/Compass/",
         "icon": "widgets/Compass/images/icon.png",
         "name": "Compass"
       },
       {
         "uri": "widgets/FullScreen/Widget",
         "position": {
-          "right": 10,
-          "top": 100,
+          "right": 20,
+          "top": 111,
           "relativeTo": "map"
         },
         "version": "2.11",
-        "id": "widgets_FullScreen_Widget_19",
-        "url": "/webappbuilder/apps/7/widgets/FullScreen/",
+        "id": "widgets_FullScreen_Widget_22",
+        "url": "/webappbuilder/apps/11/widgets/FullScreen/",
         "icon": "widgets/FullScreen/images/icon.png",
         "name": "FullScreen"
-      },
-      {
-        "uri": "widgets/Coordinate/Widget",
-        "position": {
-          "left": 0,
-          "bottom": 16,
-          "relativeTo": "map"
-        },
-        "version": "2.11",
-        "id": "widgets_Coordinate_Widget_20",
-        "url": "/webappbuilder/apps/7/widgets/Coordinate/",
-        "icon": "widgets/Coordinate/images/icon.png",
-        "name": "Coordinate",
-        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_20.json",
-        "visible": false
       },
       {
         "uri": "widgets/Splash/Widget",
@@ -151,56 +175,37 @@
           "relativeTo": "browser"
         },
         "version": "2.11",
-        "id": "widgets_Splash_Widget_21",
-        "url": "/webappbuilder/apps/7/widgets/Splash/",
+        "id": "widgets_Splash_Widget_23",
+        "url": "/webappbuilder/apps/11/widgets/Splash/",
         "icon": "widgets/Splash/images/icon.png",
         "name": "Splash"
       },
       {
         "position": {
-          "left": 10,
-          "bottom": 86,
+          "right": 20,
+          "top": 17,
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
-        "id": "_22",
-        "version": "2.11",
-        "closeable": true,
-        "uri": "",
-        "url": "/webappbuilder/apps/7/widgets/BasemapGallery/"
-      },
-      {
-        "position": {
-          "left": 10,
-          "bottom": 44,
-          "relativeTo": "map"
-        },
-        "placeholderIndex": 1,
-        "id": "_23",
-        "name": "Slides",
-        "version": "2.11",
-        "closeable": true,
-        "uri": "widgets/Slides/Widget",
-        "url": "/webappbuilder/apps/7/widgets/Slides/",
-        "openAtStart": true
-      },
-      {
-        "position": {
-          "left": 10,
-          "bottom": 128,
-          "relativeTo": "map"
-        },
-        "placeholderIndex": 2,
         "id": "_24"
       },
       {
         "position": {
-          "left": 10,
-          "bottom": 170,
+          "right": 62,
+          "top": 17,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_25"
+      },
+      {
+        "position": {
+          "right": 104,
+          "top": 17,
           "relativeTo": "map"
         },
         "placeholderIndex": 3,
-        "id": "_25"
+        "id": "_26"
       }
     ],
     "panel": {
@@ -225,39 +230,53 @@
     "portalUrl": "https://oretana.maps.arcgis.com"
   },
   "widgetPool": {
+    "panel": {
+      "uri": "themes/LaunchpadTheme/panels/LaunchpadPanel/Panel",
+      "position": {
+        "relativeTo": "map"
+      }
+    },
     "widgets": [
       {
         "uri": "widgets/Daylight/Widget",
         "version": "2.11",
         "id": "widgets_Daylight_Widget_11",
         "name": "Daylight",
-        "url": "/webappbuilder/apps/7/widgets/Daylight/",
+        "url": "/webappbuilder/apps/11/widgets/Daylight/",
         "index": 0,
         "icon": "widgets/Daylight/images/icon.png"
+      },
+      {
+        "uri": "widgets/Slides/Widget",
+        "version": "2.11",
+        "id": "widgets_Slides_Widget_12",
+        "name": "Slides",
+        "url": "/webappbuilder/apps/11/widgets/Slides/",
+        "position": {
+          "relativeTo": "map"
+        },
+        "index": 1,
+        "icon": "widgets/Slides/images/icon.png",
+        "openAtStart": true
       }
     ],
-    "groups": [],
-    "panel": {
-      "uri": "jimu/OnScreenWidgetPanel",
-      "position": {
-        "relativeTo": "map"
-      }
-    }
+    "groups": []
   },
   "loadingPage": {
-    "backgroundColor": "#21c3c9",
+    "backgroundColor": "#19af50",
     "backgroundImage": {
       "visible": false
     },
     "loadingGif": {
       "visible": true,
-      "uri": "/webappbuilder/apps/7/configs/loading/images/predefined_loading_3.gif",
-      "width": 32,
-      "height": 32
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
     }
   },
   "wabVersion": "2.11",
   "isTemplateApp": true,
   "isWebTier": false,
-  "configWabVersion": "2.11"
+  "configWabVersion": "2.11",
+  "logoLink": ""
 }

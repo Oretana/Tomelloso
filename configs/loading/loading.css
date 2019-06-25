@@ -1,5 +1,5 @@
 #main-loading{
-	background-color:#21c3c9;
+	background-color:#19af50;
 	position:relative;
 }
 #main-loading #app-loading{
@@ -11,10 +11,10 @@
 }
 #main-loading #loading-gif{
 	position: absolute;
-	background-image: url('images/predefined_loading_3.gif');
+	background-image: url('images/predefined_loading_1.gif');
 	background-repeat: no-repeat;
-	width:32px;
-	height:32px;
+	width:58px;
+	height:29px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
